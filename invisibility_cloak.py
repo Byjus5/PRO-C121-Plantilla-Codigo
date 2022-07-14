@@ -56,10 +56,12 @@ while (cap.isOpened()):
     #Guardar solo la parte de las imágenes con color rojo.
    
 
-    #Generar el output final, y fusionando res_1 y res_2.
+    #Generating the final output
+    final_output = img
+    output_file.write(img)
     
-    #Mostrar el output al usuario.
-    
+    #Displaying the output to the user
+    # cv2.imshow("magic", final_output)
     cv2.waitKey(1)
 
 cap.release()
